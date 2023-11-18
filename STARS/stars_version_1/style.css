@@ -1,0 +1,83 @@
+﻿/* Positioning elements start code*/
+/* Позиционирования елементов */
+.wrapper div{         /* задаём размер звезды через объвёртку div width: 50% и назначение элементу svg width: 100% */
+    width: 50%;
+    margin: 0.8vw;
+}
+svg {
+    width: 100%;
+    height: auto;
+    fill: rgba(128, 128, 128, 0.753); /* задаём цвет неактивной звезды */
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+/* end Positionig elements */
+
+
+
+.wrapper div:hover svg,
+.wrapper div:hover ~ div svg{
+  fill: rgb(225, 240, 58,.75);
+}
+
+.wrapper .main-active-star svg,
+.wrapper .main-active-star  ~ div svg{         
+  animation: 0.3s anim-fill forwards 0s;
+}
+
+.wrapper div:active svg {
+  animation: 0s anim-fill-active forwards 0s;
+}
+
+
+@keyframes anim-fill-active{
+  to{
+    fill:  rgb(252, 248, 7);
+    transform: scale(1.0) rotate(0.27turn);
+  }
+}
+
+
+@keyframes anim-fill{
+  to{
+    fill:  rgb(220, 238, 28);
+  }
+}
+
+.wrapper-controls{
+  position: absolute;
+  min-width: 100vw;
+}
+
+input[type="number"] {
+  width: 15%;
+}
+
+input, button, label {
+  border-radius: 8px;
+  margin: 8px;
+  padding: 5px;
+  font-size: 1.5em;
+  cursor: pointer;
+  background-color: hsl(240, 17%, 10%);
+  color: rgba(255, 255, 255, 0.821);
+  
+}
+
+label {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.73);
+  font-size: 1em;
+}
+
+input:hover:not([type='number']),button:hover {
+  letter-spacing: 2px;
+}
+
+
+

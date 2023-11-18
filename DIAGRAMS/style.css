@@ -1,0 +1,109 @@
+﻿:root {
+    --color-default-value: 100;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(var(--rgb-red,var(--color-default-value)),
+                          var(--rgb-green,var(--color-default-value)),
+                          var(--rgb-blue,var(--color-default-value)));
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.wrapper-controls {
+    margin-bottom: 1%;
+}
+
+
+form {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5%;
+    padding: 1% 2%;
+    margin-bottom: 1%;
+    font-size: 2rem;
+    text-align: center; 
+    min-width: 100%;
+    margin-bottom: 5%;
+}
+
+label {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#diagramCanvas {
+    min-width: 100vw;
+    margin: auto;
+}
+
+input, button {
+    border-radius: 8px;
+    margin: 8px;
+    padding: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: hsl(240, 17%, 10%);
+    color: rgba(255, 255, 255, 0.821);  
+}
+  
+.colors-red {
+    background-color: rgb(var(--rgb-red,var(--color-default-value)),0,0);
+}
+
+.colors-green {
+    background-color: rgb(0,var(--rgb-green,var(--color-default-value)),0);
+}
+
+.colors-blue {
+    background-color: rgb(0,0,var(--rgb-blue,var(--color-default-value)));
+}
+
+:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+[class^='colors']{
+    position: relative;
+    padding-right: 20%;
+}
+
+[class^='colors'] svg{
+    position: absolute;
+    transform: scale(0.55);
+    top: -20%;
+    fill: rgba(255,255,255,0.82);
+}
+
+.colors-green svg {
+    transform: scale(.7506);
+    top: -3%;
+}
+
+.colors-blue svg {
+    transform: scale(.6159);
+    top: -17%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

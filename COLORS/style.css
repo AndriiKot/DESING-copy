@@ -1,0 +1,90 @@
+﻿*{
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Agdasima', sans-serif;
+}
+
+h3{
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: rgb(147, 130, 130);
+    min-height: 100vh;
+    min-width: 100vw;
+    position: relative;
+    color:aliceblue;
+}
+
+.wrapper-forms {
+    background-color: rgba(0,0,0,0.13);
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;  
+    text-align: center;
+}
+
+.wrapper-forms * {
+    margin: 1%;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    border:none;
+}
+
+input[type='number'],
+input[type='submit'],
+button,
+select {
+    color:rgba(0,0,0,0.7);
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+div[class^='color-']{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+div[class^='color-'] h3,
+div[class^='color-'] button{
+    color: inherit;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.4s;
+}
+
+div[class^='color-'] h3:hover,
+div[class^='color-'] button:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.13);
+}
+
+div[class^='color-'] button {
+    border: none;
+    background: transparent;
+    font-size: 150%;
+}
+
+div.wrapper {
+    display: grid;
+}
+
+
+:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.preserve {
+    white-space-collapse: preserve;
+}
+
+
+

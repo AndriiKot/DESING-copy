@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>COLORS</title>
+</head>
+<body>
+    <div class="wrapper-forms">
+        <form action="#" class="createRandomGridElements" id="createRandomGridElements">
+            <label>Quantity (between 1-10 and 1-100):</label>
+            <input type="number" id="gridAxisX"  min="1" max="5" required autofocus placeholder="1-5(x)">
+            <span>X</span>
+            <input type="number" id="gridAxisY"  min="1" max="100" required placeholder="1-100(y)">
+            <div class="choose-color-model">
+                <label for="colorModel">Choose Color Model:</label>
+                <select id="colorModel" name="color-model-list" form="createRandomGridElements">
+                    <option value="RGB">RGB</option>
+                    <option value="HEX" selected>HEX</option>
+                    <option value="HSL">HSL</option>
+                </select>
+            </div>
+            <button class="start">Start</button>
+        </form>
+        <button class="reset">Reset</button>       
+        <button class="all-open-lock">All open</button>       
+        <button class="all-close-lock">All close</button>       
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>

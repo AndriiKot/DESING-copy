@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  background-color: aqua;
+  --size: 480px;
+}
+
+#gallery {
+  width: 860px;
+  margin: 0 auto;
+  margin-top: 3%;
+  text-align: center;
+}
+
+#gallery .photos{
+  position: relative;
+  height: var(--size)
+}
+#gallery .photos img{
+  width: 100%;
+  height: var(--size);
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1.2s;
+}
+
+
+.buttons input{
+  margin-top: 12px;
+  margin-right: 15px;
+}
+
+#gallery .photos img.showed{
+  opacity: 1;
+}
