@@ -1,0 +1,17 @@
+body {
+  background: #0a5b90;
+  padding: 0;
+  margin: 0;
+}
+body h1 {
+  font-size: 4em;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: 'Arial';
+  color: #f5f5f5;
+  text-align: center;
+}
