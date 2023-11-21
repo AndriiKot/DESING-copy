@@ -1,0 +1,35 @@
+@import "./mixins.styl"
+@import "./variables.styl"
+
+
+main-animation()
+    display inline-block
+    animation animation animation-main-interbav infinite
+
+animation-move()
+    @keyframes animation {
+        0%{
+            color-start()
+            transform-start()
+            margin-left 0
+        }
+        25%{
+            color-end()
+            transform translateY(-2.5rem)
+            // transform-end-up()
+            margin-left 10px
+        }
+        100%{
+            color-start()
+            transform-start()
+            margin-left 0
+        }
+
+    }
+
+animation-delay()
+    interval = 0
+    for n in (1..7)
+        interval += 0.1
+        :nth-child({n})
+            animation-delay interval s
