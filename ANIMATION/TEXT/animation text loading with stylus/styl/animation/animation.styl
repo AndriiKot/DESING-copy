@@ -4,25 +4,21 @@
 
 main-animation()
     display inline-block
-    animation animation animation-main-interbav infinite
+    animation animation animationMainInterval  infinite
 
 animation-move()
     @keyframes animation {
         0%{
-            color-start()
-            transform-start()
-            margin-left 0
+            color-cycle-1()
         }
-        25%{
-            color-end()
-            transform translateY(-2.5rem)
-            // transform-end-up()
-            margin-left 10px
+        35%{
+            color-cycle-2()
+            transform-end-up()
+            margin-left()
+            text-shadow()
         }
         100%{
-            color-start()
-            transform-start()
-            margin-left 0
+            color-cycle-3()
         }
 
     }
@@ -30,6 +26,6 @@ animation-move()
 animation-delay()
     interval = 0
     for n in (1..7)
-        interval += 0.1
+        interval += animationLetterInterval
         :nth-child({n})
             animation-delay interval s

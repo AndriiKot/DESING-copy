@@ -1,7 +1,37 @@
+.color1 {
+  color: #578fff;
+}
+.color2 {
+  color: #00d1ff;
+}
+.color3 {
+  color: #00ffc3;
+}
+.color4 {
+  color: #ffff7e;
+}
+.color5 {
+  color: #fff8b5;
+}
+.color1 {
+  color: #578fff;
+}
+.color2 {
+  color: #00d1ff;
+}
+.color3 {
+  color: #00ffc3;
+}
+.color4 {
+  color: #ffff7e;
+}
+.color5 {
+  color: #fff8b5;
+}
 body {
   margin: 0;
   padding: 0;
-  background: #f00;
+  background: #578fff;
 }
 body .container {
   position: absolute;
@@ -18,62 +48,58 @@ body .container span {
 }
 @-moz-keyframes animation {
   0% {
-    color: #ffc0cb;
-    margin-left: 0;
+    color: rgba(255,255,128,0.1);
   }
-  25% {
-    color: #00f;
-    transform: translateY(-2.5rem);
-    margin-left: 10px;
+  35% {
+    color: #ffff80;
+    transform: translateY(-3rem);
+    margin-left: 1rem;
+    text-shadow: 0 3rem 1rem #000;
   }
   100% {
-    color: #ffc0cb;
-    margin-left: 0;
+    color: rgba(255,255,128,0.7);
   }
 }
 @-webkit-keyframes animation {
   0% {
-    color: #ffc0cb;
-    margin-left: 0;
+    color: rgba(255,255,128,0.1);
   }
-  25% {
-    color: #00f;
-    transform: translateY(-2.5rem);
-    margin-left: 10px;
+  35% {
+    color: #ffff80;
+    transform: translateY(-3rem);
+    margin-left: 1rem;
+    text-shadow: 0 3rem 1rem #000;
   }
   100% {
-    color: #ffc0cb;
-    margin-left: 0;
+    color: rgba(255,255,128,0.7);
   }
 }
 @-o-keyframes animation {
   0% {
-    color: #ffc0cb;
-    margin-left: 0;
+    color: rgba(255,255,128,0.1);
   }
-  25% {
-    color: #00f;
-    transform: translateY(-2.5rem);
-    margin-left: 10px;
+  35% {
+    color: #ffff80;
+    transform: translateY(-3rem);
+    margin-left: 1rem;
+    text-shadow: 0 3rem 1rem #000;
   }
   100% {
-    color: #ffc0cb;
-    margin-left: 0;
+    color: rgba(255,255,128,0.7);
   }
 }
 @keyframes animation {
   0% {
-    color: #ffc0cb;
-    margin-left: 0;
+    color: rgba(255,255,128,0.1);
   }
-  25% {
-    color: #00f;
-    transform: translateY(-2.5rem);
-    margin-left: 10px;
+  35% {
+    color: #ffff80;
+    transform: translateY(-3rem);
+    margin-left: 1rem;
+    text-shadow: 0 3rem 1rem #000;
   }
   100% {
-    color: #ffc0cb;
-    margin-left: 0;
+    color: rgba(255,255,128,0.7);
   }
 }
 body .container :nth-child(1) {
