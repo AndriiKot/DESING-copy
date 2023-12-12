@@ -1,5 +1,5 @@
-@import "./mixins.styl"
-@import "./variables.styl"
+@require "./*"
+//@import "./variables.styl"
 
 
 main-animation()
@@ -29,3 +29,4 @@ animation-delay()
         interval += animationLetterInterval
         :nth-child({n})
             animation-delay interval s
+

@@ -1,0 +1,18 @@
+animation(arg = 1)
+    sum = 0
+    for i in (1..arg)
+        sum += 0.05
+        :hover div:nth-child({i})
+            transition-delay: sum s
+
+nnn(arg = 1)
+    l = 0
+    t = 0
+    for i in (1..arg)
+        >div:nth-child({i})
+            z-index i
+            position absolute
+            left (l) px
+            top  (t) px
+        l += 20
+        t += 10

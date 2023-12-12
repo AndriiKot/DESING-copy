@@ -1,0 +1,6 @@
+animation(arg = 1)
+    sum = 0
+    for i in (1..arg)
+        sum += 0.05
+        :hover div:nth-child({i})
+            transition-delay: sum s
