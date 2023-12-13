@@ -7,12 +7,14 @@ animation(arg = 1)
 
 nnn(arg = 1)
     l = 0
-    t = 0
     for i in (1..arg)
         >div:nth-child({i})
             z-index i
             position absolute
-            left (l) px
-            top  (t) px
-        l += 20
-        t += 10
+            left (l ) px
+            top 0px
+        l += 30
+        >div:nth-child(even)
+            top 10px
+            opacity: 0.7;
+            
